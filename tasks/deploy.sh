@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# Script to perform a Jekyll deploy for moonlightradio.ddns.net
+# Script to perform a Jekyll deploy for moonlightradio.xyz
 #
 
-JEKYLL_DEST=/var/www/thebestmotherfuckingwebsite.co/public_html
+JEKYLL_DEST=/var/www/moonlightradio.xyz/public_html
 WWW_ROOT=/var/www
 
 echo -e "Building Jekyll site to ${JEKYLL_DEST}..."
