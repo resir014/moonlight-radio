@@ -1,0 +1,14 @@
+<nav class="comic-pagination">
+  {% if paginator.page != 1 %}
+    <a href="{{ '/comic/' | prepend: site.baseurl }}"><img src="{{ '/assets/images/first.png' | prepend: site.baseurl }}" alt="first"></a>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><img src="{{ '/assets/images/prev.png' | prepend: site.baseurl }}" alt="prev"></a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"><img src="{{ '/assets/images/next.png' | prepend: site.baseurl }}" alt="next"></a>
+  {% endif %}
+  {% if paginator.page != paginator.total_pages %}
+    <a href="{{ '/comic/page/' | prepend: site.baseurl | append: paginator.total_pages }}"><img src="{{ '/assets/images/last.png' | prepend: site.baseurl }}" alt="last"></a>
+  {% endif %}
+</nav>

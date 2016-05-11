@@ -1,0 +1,72 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:            /:categories/:title/
+#relative_permalinks:  true
+
+# Build settings
+markdown:             kramdown
+highlighter:          rouge
+
+# Setup
+title:                "MOONLIGHT"
+tagline:              "The dark side of STARLIGHT."
+url:                  "https://moonlightradio.xyz" # the base hostname & protocol for your site
+baseurl:              "" # the subpath of your site, e.g. "/blog"
+exclude:              ["Makefile", "Gruntfile.js", "Gemfile", "README", "LICENSE", "tasks", "node_modules", "package.json"]
+keep_files:           ["share", "uploads", ".htaccess"]
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:           _sass
+  style:              :compressed
+
+# Site authors
+author:
+  name:               "the MOONLIGHT crew"
+
+# MOONLIGHT Radio
+radio:
+  url:                "moonlightradio.xyz"
+  port:               8080
+  stream_url:
+    320:               "http://moonlightradio.xyz:8080/stream_320"
+    128:               "http://moonlightradio.xyz:8080/stream_128"
+    ６４:               "http://moonlightradio.xyz:8080/stream_64"
+
+# List of time zones supported in the TZ database
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:             UTC
+
+# Jekyll plugins
+gems:
+  - jekyll-sitemap
+  - octopress-paginate
+
+# octopress-paginate
+pagination:
+  limit:              false
+  per_page:           1
+  permalink:          /page/:num/
+
+# Navigational menus
+nav:
+  - title: Home
+    url: /index.html
+  - title: Logs
+    url: /logs
+  - title: Files
+    url: /files
+
+collections:
+  stuff:
+    output:           true
+    permalink:        /:path/
+  archived-logs:
+    output:           true
+    permalink:        /:collection/:path/
+  hidden_posts:
+    output:           true
+    permalink:        /:collection/:path/ #can be overriden in the file

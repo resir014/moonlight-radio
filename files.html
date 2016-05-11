@@ -1,0 +1,25 @@
+---
+layout: default
+title: files
+permalink: /files/
+---
+
+<div class="breadcrumbs">
+  <p><a href="{{ site.baseurl }}/">home</a> / {{ page.title }}</p>
+</div>
+
+<div class="page">
+  <h1>Archived files</h1>
+
+  <p>So, you actually found this. Feeling nostalgic, huh?</p>
+
+  <ul class="files">
+    {% for file in site.data.files %}
+    <li>
+      <a href="{% if file.url contains 'http://' or file.url contains 'https://' %}{{ file.url }}{% else %}{{ file.url | prepend: site.baseurl }}{% endif %}" target="_blank">
+        {{ file.name }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.container {
+  padding: $grid-gutter;
+
+  @media (min-width: $grid-breakpoint) {
+    padding: $grid-gutter-lg;
+  }
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+
+  small {
+    display: block;
+  }
+}

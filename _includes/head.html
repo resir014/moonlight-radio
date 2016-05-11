@@ -1,0 +1,38 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+  <meta name="description" content="{{ site.tagline }}">
+
+  <!-- OpenGraph tags-->
+  <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  <meta content="{{ site.tagline }}" property="og:description">
+  {% if page.url %}
+    <meta content="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" property="og:url">
+  {% endif %}
+
+  <link rel="author" href="{{ site.baseurl }}/humans.txt">
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700,700italic">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
+
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
+  <link rel="alternate" type="application/atom+xml" title="logs - {{ site.title }}" href="{{ site.baseurl }}/logs/feed.xml">
+</head>

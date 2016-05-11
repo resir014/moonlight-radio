@@ -1,0 +1,35 @@
+---
+---
+
+/* TEAM */
+Server Admin: ATLAS Moon
+Twitter: AT_745
+
+Webmaster: Resi Respati
+Site: https://resir014.github.io
+Twitter: resir014
+
+Designer: hexdefined
+Twitter: hexdefined
+
+/* THANKS */
+Poole theme: Mark Otto
+License: MIT
+URL: https://github.com/poole/poole
+
+The MOONLIGHT crew:
+- Metawolf
+- faintshadows
+- Duali
+- Rivenwolf_2
+- puckipedia
+- MonteCrisco
+- Midnight
+- crystalclaw
+- and many more...
+
+/* SITE */
+Last update: {{ site.time | date: "%Y/%m/%d" }}
+Standards: HTML5, CSS3, JS
+Components: jQuery, Jekyll
+Software: Visual Studio Code, GIMP
