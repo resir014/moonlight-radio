@@ -14,7 +14,7 @@ tagline:              "The dark side of STARLIGHT."
 url:                  "https://moonlightradio.xyz" # the base hostname & protocol for your site
 baseurl:              "" # the subpath of your site, e.g. "/blog"
 exclude:              ["Makefile", "Gruntfile.js", "Gemfile", "README", "LICENSE", "tasks", "node_modules", "package.json"]
-keep_files:           ["share", "uploads", ".htaccess"]
+keep_files:           ["share", "uploads", "bot", ".htaccess"] # keep a bunch of folders intact, including ATLAS's bot
 
 # Assets
 #
