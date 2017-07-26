@@ -6,7 +6,7 @@ permalink: /logs/stardate-12039-2/
 stardate: 12039.2
 ---
 
-{% highlight irc %}
+```
 <Wolfgun> it has more to do with theory and concept based on association
 <Wolfgun> like saturn is associated with black bile, which is a humor
 <Wolfgun> it also happens to be associated with the scale in which i write nearly all my music
@@ -49,4 +49,4 @@ stardate: 12039.2
 <RT> shut up resir thats awful
 <jameszenoa> pfft
 <resir014> lol
-{% endhighlight %}
+```

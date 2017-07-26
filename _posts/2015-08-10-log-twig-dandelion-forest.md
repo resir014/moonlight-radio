@@ -5,13 +5,13 @@ title: "&quot;logs have been banned due to the waste of trees&quot;"
 stardate: 0
 ---
 
-{% highlight irc %}
+```
 //DATE + TIME//
 <LordUni> day: 676
 <LordUni> time: 1:45
-{% endhighlight %}
+```
 
-{% highlight irc %}
+```
 //BEGIN LOGS//
 <LordUni> log: someone shit in the corner
 <ghostshadows> log:we think it was keon
@@ -86,9 +86,9 @@ stardate: 0
 <LordUni> log: someone is starting to write SCP esq paragraphs about people on the ship
 <ghostshadows> log: i just logged all the logs to a main log
 //END LOGS//
-{% endhighlight %}
+```
 
-{% highlight irc %}
+```
 //START LOGS//
 <undefined> log: i made a backup log
 <HellieCharty> log: just got back inside with dog
@@ -120,4 +120,4 @@ stardate: 0
 <ghostshadows> log: everything kinda stopped, everyone died down, we can actually calm down, and watch the stars fly by
 <Penumbra> Log: stars are pretty
 //END LOGS//
-{% endhighlight %}
+```

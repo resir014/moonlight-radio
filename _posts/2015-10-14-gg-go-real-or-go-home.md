@@ -4,7 +4,7 @@ layout: logs
 title: "\"gg\" (Go Real or Go Home)"
 ---
 
-{% highlight irc %}
+```
 [15:05:44] <Keon_The_Iguana> MEET ME ON THE OTHER SIDE
 [15:07:47] <Keon_The_Iguana> NEVER HAS MATH BEEN SO EXILIRATING
 [15:08:05] <Keon_The_Iguana> THERE'S NO STOPPING NOW
@@ -22,4 +22,4 @@ title: "\"gg\" (Go Real or Go Home)"
 [15:12:38] <Keon_The_Iguana> GO BIG OR GO HOME
 [15:12:41] <Keon_The_Iguana> IM GOING BIG
 [15:12:49] <Keon> Gg
-{% endhighlight %}
+```

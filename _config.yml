@@ -1,18 +1,11 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:            /:categories/:title/
-#relative_permalinks:  true
-
-# Build settings
-markdown:             kramdown
-highlighter:          rouge
 
 # Setup
 title:                "MOONLIGHT"
 tagline:              "The dark side of STARLIGHT."
-url:                  "https://moonlightradio.xyz" # the base hostname & protocol for your site
-baseurl:              "" # the subpath of your site, e.g. "/blog"
+url:                  "https://resir014.github.io" # the base hostname & protocol for your site
+baseurl:              "/moonlight-radio" # the subpath of your site, e.g. "/blog"
 exclude:              ["Makefile", "Gruntfile.js", "Gemfile", "README", "LICENSE", "tasks", "node_modules", "package.json"]
 keep_files:           ["share", "uploads", "bot", ".htaccess"] # keep a bunch of folders intact, including ATLAS's bot
 
@@ -27,15 +20,6 @@ sass:
 author:
   name:               "the MOONLIGHT crew"
 
-# MOONLIGHT Radio
-radio:
-  url:                "moonlightradio.xyz"
-  port:               8080
-  stream_url:
-    320:               "http://moonlightradio.xyz:8080/stream_320"
-    128:               "http://moonlightradio.xyz:8080/stream_128"
-    ６４:               "http://moonlightradio.xyz:8080/stream_64"
-
 # List of time zones supported in the TZ database
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:             UTC
@@ -43,11 +27,12 @@ timezone:             UTC
 # Jekyll plugins
 gems:
   - jekyll-sitemap
-  - octopress-paginate
+  - jekyll-paginate-v2
 
 # octopress-paginate
 pagination:
-  limit:              false
+  enabled: true
+  limit:              0
   per_page:           1
   permalink:          /page/:num/
 
